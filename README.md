@@ -3,13 +3,11 @@
 [![CI](https://github.com/meeshkan/introduction-to-property-based-testing/workflows/CI/badge.svg)](https://github.com/meeshkan/introduction-to-property-based-testing/actions?query=branch%3Amaster)
 [![Chat on Gitter](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/meeshkan/community)
 
-This repository contains the [article draft](ARTICLE.md) introducing property-based testing and working test code in python.
+This repository contains the source code for our article: [From 1 to 10,000 test cases in under an hour - A beginner's guide to property-based testing]().
 
-We've created a [GitHub repository](https://github.com/meeshkan/beginners-guide-to-property-based-testing) to go with this guide. All of the featured code examples exist there as unit tests and include instructions for how to execute them.
+Most of the tests are written with [Hypothesis](https://hypothesis.readthedocs.io/en/latest/), a Python library for generative test cases.
 
-The full guide associated with this repository 
-
-[Chat with us on Gitter](https://gitter.im/meeshkan/community) if you run into problems or have any questions!
+If you run into problems or have any questions, please [open an issue](https://github.com/meeshkan/beginners-guide-to-property-based-testing/issues) or [reach out to us on Gitter](https://gitter.im/meeshkan/community).
 
 ## Table of Contents
 - [Running the tests](#running-the-tests)
@@ -73,17 +71,12 @@ pytest file_name.py
 
 ## More resources
 
-- https://hackage.haskell.org/package/QuickCheck
-  - Early (1999) Haskell library.
-  - https://jqwik.net/property-based-testing.html mentions it as "Quickcheck is the original tool for writing property tests."
-  - Also https://en.wikipedia.org/wiki/QuickCheck: "QuickCheck is a software library, specifically a combinator library, originally written in the programming language Haskell, designed to assist in software testing by generating test cases for test suites. It is compatible with the compiler, Glasgow Haskell Compiler (GHC) and the interpreter, Haskell User's Gofer System (Hugs). It is free and open-source software released under a BSD-style license. In QuickCheck, assertions are written about logical properties that a function should fulfill. Then QuickCheck attempts to generate a test case that falsifies such assertions. Once such a test case is found, QuickCheck tries to reduce it to a minimal failing subset by removing or simplifying input data that are unneeded to make the test fail. The project began in 1999. Besides being used to test regular programs, QuickCheck is also useful for building up a functional specification, for documenting what functions should be doing, and for testing compiler implementations."
-- https://hypothesis.works/
-  - "This sort of testing is often called 'property-based testing', and the most widely known implementation of the concept is the Haskell library QuickCheck, but Hypothesis differs significantly from QuickCheck and is designed to fit idiomatically and easily into existing styles of testing that you are used to, with absolutely no familiarity with Haskell or functional programming needed."
-  - https://hypothesis.works/articles/what-is-property-based-testing/
-- https://github.com/ksaaskil/introduction-to-property-based-testing
-- https://medium.com/criteo-labs/introduction-to-property-based-testing-f5236229d237
-- https://jqwik.net/property-based-testing.html
-- https://blog.ssanj.net/posts/2016-06-26-property-based-testing-patterns.html
+- 🖥 [Slides and demo from an introduction to property-based testing presentation](https://github.com/ksaaskil/introduction-to-property-based-testing) by our colleague Kimmo Sääskilahti
+- 📖 [Introduction to Property Based Testing](https://medium.com/criteo-labs/introduction-to-property-based-testing-f5236229d237) by Nicolas Dubien
+- 🔗 [A collection of introductory materials](https://jqwik.net/property-based-testing.html) by jqwik
+- 📖 [Property-based Testing Patterns](https://blog.ssanj.net/posts/2016-06-26-property-based-testing-patterns.html) by Sanjiv Sahayam
+- 🎥 [Testing the Hard Stuff and Staying Sane](https://www.youtube.com/watch?v=zi0rHwfiX1Q) by John Hughes
+- 📖 [Property-based testing: what is it?](https://blog.jessitron.com/2013/04/25/property-based-testing-what-is-it/) by Jessica Joy Kerr
 
 ## Contributing
 
@@ -103,4 +96,4 @@ Here are some ways you can get in touch:
 Some lingering questions we have:
 - Why weren't you using property-based testing before?
 - After reading through this guide, would you be willing to try? 
-- Would you be interested in seeing another article expanding on the topic?
+- Are you interested in seeing another article expanding on the topic?
